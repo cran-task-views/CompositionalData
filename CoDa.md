@@ -1,10 +1,10 @@
 ---
-name: CompositionalData
+name: CoDa
 topic: Compositional Data Analysis
 maintainer: Karel Hron, Javier Palarea-Albaladejo, Matthias Templ
 email: karel.hron@upol.cz
 version: 2024-11-18
-source: https://github.com/cran-task-views/CoDa/
+source: https://github.com/matthias-da/coda-ctv-draft
 ---
 
 Compositional data are positive multivariate data where the sum of the values in 
@@ -108,7 +108,7 @@ data analysis using the log-ratio approach introduced by
 Comment from Matthias: coda.base rather to "other packages"?
 </span>
 
--   `r pkg("compositions", priority = "core")`: -   `r pkg("compositions", priority = "core")`: Provides tools for consistent analysis of compositional data (e.g., substance proportions) and positive numbers (e.g., concentrations). Implements methods for univariate and multivariate analysis, including principal component analysis (PCA), cluster analysis, and regression models adapted to compositional data. 
+-  `r pkg("compositions", priority = "core")`: Provides tools for consistent analysis of compositional data (e.g., substance proportions) and positive numbers (e.g., concentrations). Implements methods for univariate and multivariate analysis, including principal component analysis (PCA), cluster analysis, and regression models adapted to compositional data. 
 Main reference is [van den Boogaart. and Tolosana-Delgado (2008)](https://doi.org/10.1016/j.cageo.2006.11.017).
 
 -   `r pkg("robCompositions", priority = "core")`: Methods for analysis of compositional data including robust methods, imputation of missing values, methods to replace rounded zeros, count zeros, 
