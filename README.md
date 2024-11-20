@@ -7,7 +7,10 @@ GitHub repository.
 
 To compile the Markdown file:
 
+Go to the directory where the file `CoDa.md` is located and run:
+
 ```{r}
+install.packages("ctv")
 library("ctv")
 ctv2html("CoDa.md", cran = TRUE)
 browseURL("CoDa.html")
