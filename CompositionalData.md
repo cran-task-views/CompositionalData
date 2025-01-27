@@ -46,7 +46,7 @@ This package is linked to the monograph
 and supports the analyses and examples therein.
 
 -   `r pkg("robCompositions", priority = "core")`: with a main focus on robust 
-statistical methods (see [CRAN Task View: Robust](https://cran.r-project.org/view=Robust) for the case of ordinary data), this package includes a wide range of tools for the 
+statistical methods (see `r view("Robust")`) for the case of ordinary data), this package includes a wide range of tools for the 
 manipulation and analysis of
 compositional data within the log-ratio framework. Thus, ordinary transformations, dealings 
 with irregular data, robust implementations of multivariate methods; such as 
@@ -64,7 +64,7 @@ correspondence analysis and redundance analysis.
 <!--
 -   `r pkg("Compositional")`: regression, classification, contour plots, hypothesis 
 testing and fitting of distributions for compositional data are some of the 
-functions included in this package. Further some functions for percentages 
+functions included in this package. Further, some functions for percentages 
 (or proportions) are included. The package deals, however, with compositional 
 data mostly as with constrained data, thus avoiding the scale invariance 
 property and, more generally, the principles of compositional data analysis 
@@ -90,7 +90,7 @@ associated with small values that have been rounded or have fallen below the det
 the measuring device; count zeros refer to zeros that occur in discrete compositions derived from a
 counting processes, generally associated with limited sampling; and, finally, essential zeros
 refer to truly zero values, i.e. parts of the composition that are genuinely absent.
-Rounded zeros, which essentially correspond to a a class of left-censored data, have received the most
+Rounded zeros, which essentially correspond to a class of left-censored data, have received the most
 attention in the literature.
 
 Moreover, as with ordinary statistical methods, the presence of either missing values or outliers poses practical challenges.
@@ -163,7 +163,7 @@ Probability density functions are essentially scale invariant data objects, usua
 data and embedded in a Hilbert space, so-called a Bayes space (see [van den Boogaart, Egozcue and Pawlowsky-Glahn (2014)](https://doi.org/10.1111/anzs.12074) for details).
 
 The packages listed below implement methods for density data analysis from this perspective.
-Note that they differ from those included in the [CRAN Task View: Functional Data Analysis](https://cran.r-project.org/view=FunctionalData) 
+Note that they differ from those included in the `r view("FunctionalData")` 
 in that a Bayes space is assumed as sample space for the density functions.
 
 -   `r pkg("robCompositions", priority = "core")`: methods for
@@ -172,13 +172,13 @@ Additionally, a functional version of the centered log-ratio transformation is i
 
 <!--
 <span style="color: red;">
-Comment from Matthias: what else? KH: I'm afraid that currently nothing. One can consider to add also the 'fdadensity' package from Petersen et al. but it could be quite misleading as it is based on another approach (mapping PDFs to(!) a Hilbert space). We therefore urgently need to build such a package.:-)
-Alessandra: I agree with Karel. I'm wondering whether we should mention that after basis projection one could possibly resort to the 'fda' package for further processing - but this is not really ready-to-use, so work need to be done. In addition: should we include a reference to some work? It could be the paper on Bayes Hilbert spaces, or it could also be the entry on Bayes spaces in the encyclopedia.
+Comment from Matthias: what else? KH: I'm afraid that currently nothing. One can also consider to add the 'fdadensity' package from Petersen et al. but it could be quite misleading as it is based on another approach (mapping PDFs to(!) a Hilbert space). We therefore urgently need to build such a package.:-)
+Alessandra: I agree with Karel. I'm wondering whether we should mention that after basis projection one could possibly resort to the 'fda' package for further processing - but this is not really ready-to-use, so work needs to be done. In addition: should we include a reference to some work? It could be the paper on Bayes Hilbert spaces, or it could also be the entry on Bayes spaces in the encyclopedia.
 </span>
 
 
 <span style="color: red;">
-Comment from KH: I removed the general section High dimensional data because there were only two packages and the package ccmm was very specific. I moved it to Other packages, where also a similar one purpose package CMMs is located.
+Comment from KH: I removed the general section High dimensional data because there were only two packages and the package ccmm was very specific. I moved it to Other packages, where also a similar one-purpose package CMMs is located.
 </span>
 -->
 
@@ -189,7 +189,7 @@ and other variables, either as predictors/covariates or response; and also betwe
 sides of the regression model. Packages specifically dedicated to compositional regression analysis are listed below. It should be noted that `r pkg("complmrob")` and `r pkg("robregcc")` do not offer anything essential beyond, for example, `r pkg("robCompositions")`.
 <!--
 <span style="color: red;">
-Javier: I have removed the subsequent text as I found it too redundant and referring to general things not specific of regression
+Javier: I have removed the subsequent text as I found it too redundant and referring to general things not specific to regression
 analysis. I have instead added some general comments about "why CoDa analysis" in the general introduction at the beginning.
 </span>
 <span style="color: red;">
@@ -207,7 +207,7 @@ The model simultaneously treats outliers and parameter estimates as described in
 <!--
 <span style="color: red;">
 Javier: it would be worth highlighting what is the added value of the above packages, particularly the first, 
-any particular/special feature? Otherwise, from the current description it is not clear what they are offering
+any particular/special feature? Otherwise, from the current description, it is not clear what they are offering
 beyond e.g. `robCompositions`.
 </span>
 -->
@@ -276,7 +276,7 @@ in monogastric animals. Both methods for compositional and constrained data are 
 
 Compositional data analysis is an integral part of geostatistics and geochemistry, areas where the
 methodology found its first successful applications. Data sets here often represent proportions of elements,
-minerals, or isotopes, and are subject to spatial dependencies (see [CRAN Task View: SpatioTemporal](https://cran.r-project.org/view=SpatioTemporal)). In the case of compositional data, these
+minerals, or isotopes, and are subject to spatial dependencies (see `r view("SpatioTemporal")`). In the case of compositional data, these
 applications require methods that
 respect their relative nature while taking into account spatial structures and relationships.
 
@@ -381,11 +381,11 @@ Alessandra: I agree with Javier's viewpoint, we should put a boundary to say who
 
 ### Links
 
--   [CRAN Task View: Functional Data Analysis](https://cran.r-project.org/view=FunctionalData)
--   [CRAN Task View: Bayesian](https://cran.r-project.org/view=Bayesian)
--   [CRAN Task View: Cluster](https://cran.r-project.org/view=Cluster)
--   [CRAN Task View: MachineLearning](https://cran.r-project.org/view=MachineLearning)
--   [CRAN Task View: Robust](https://cran.r-project.org/view=Robust)
--   [CRAN Task View: SpatioTemporal](https://cran.r-project.org/view=SpatioTemporal)
+-   `r view("FunctionalData")` 
+-   `r view("Bayesian")`
+-   `r view("Cluster")`
+-   `r view("MachineLearning")`
+-   `r view("Robust")`
+-   `r view("SpatioTemporal")`
 
 ### References
