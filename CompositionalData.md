@@ -54,7 +54,7 @@ This package is linked to the monograph
 and supports the analyses and examples therein.
 
 -   `r pkg("robCompositions", priority = "core")`: with a main focus on robust 
-statistical methods (see `r view("Robust")`) for the case of ordinary data), this package includes a wide range of tools for the 
+statistical methods (see `r view("Robust")` for an overview of other robust statistical methods available in R). The package includes a wide range of tools for the 
 manipulation and analysis of
 compositional data within the log-ratio framework. Thus, ordinary transformations, dealings 
 with irregular data, robust implementations of multivariate methods; such as 
