@@ -15,7 +15,7 @@ support compositional data analysis within the log-ratio coordinate framework. T
 
 **Table of Contents**
 
-- [Background](#background)
+
 - [General purpose packages](#general-purpose-packages)
 - [Irregular data: zeros, censoring, missing and outliers](#irregular-data-zeros-censoring-missing-and-outliers)
 - [Visualization](#visualization)
@@ -25,7 +25,7 @@ support compositional data analysis within the log-ratio coordinate framework. T
 - [High-dimensional compositional data with applications to omics data](#high-dimensional-compositional-data-with-applications-to-omics-data)
 - [Special applications in geostatistics and geochemistry](#special-applications-in-geostatistics-and-geochemistry)
 - [Other packages](#other-packages)
-- [Links](#links)
+- [Background](#background)
 - [References](#references)
 
 
