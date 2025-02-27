@@ -10,6 +10,22 @@ source: https://github.com/cran-task-views/CoDa/
 
 In general, compositional data refers to multivariate, positive and scale invariant data that convey relative information. Although not necessarily, they are often closed or normalized to be expressed in proportions adding up to 1, percentages adding to 100, or the like; but the scale-invariance property implies that the normalization constant used is actually irrelevant. That is, compositional methods are applicable whenever the researcher recognizes that the relevant information in the data is relative and, thus, there is an intrinsic interdependence between the parts that make up the composition. These particularities are not considered by ordinary statistical methods, which are generally designed for unconstrained real-valued data.
 
+**Table of Contents**
+
+- [Background](#background)
+- [General purpose packages](#general-purpose-packages)
+- [Irregular data: zeros, censoring, missing and outliers](#irregular-data-zeros-censoring-missing-and-outliers)
+- [Visualization](#visualization)
+- [Compositional tables](#compositional-tables)
+- [Density data analysis](#density-data-analysis)
+- [Regression modelling](#regression-modelling)
+- [High-dimensional compositional data with applications to omics data](#high-dimensional-compositional-data-with-applications-to-omics-data)
+- [Special applications in geostatistics and geochemistry](#special-applications-in-geostatistics-and-geochemistry)
+- [Other packages](#other-packages)
+- [Links](#links)
+- [References](#references)
+
+
 ### Background
 Awareness of the problems with compositional data dates back to the end of the 19th century, when the renowned statistician Karl Pearson recognized the problem of spurious correlations between variables scaled with respect to a common denominator. When closed to add up to constant value, compositional data formally represented on a simplex sample space, and this can be a convenient representation in a practical setting. The simplex is a constrained space with its own internal operations and geometry. However, any coherent approach to analyzing compositional data should not depend on the chosen representation, nor require any preliminary normalization. 
 
@@ -24,7 +40,7 @@ In recent years, the popularity of compositional methods has grown significantly
 Therefore, this task view provides a curated collection of R packages that aim to 
 support compositional data analysis within the log-ratio coordinate framework. The main goal is serving as a guide to practitioners interested in applying such methods. The packages can be broadly categorized into the following topics, although in fact many provide functionalities spanning multiple categories, as detailed below.
 
-### General purpose packages
+### General purpose packages 
 
 This section refers to packages that provide a general platform for compositional data 
 analysis in R, implementing functions to conduct basic operations and 
