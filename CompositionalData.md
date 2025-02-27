@@ -8,7 +8,10 @@ source: https://github.com/cran-task-views/CoDa/
 ---
 
 
-In general, compositional data refers to multivariate, positive and scale invariant data that convey relative information. Although not necessarily, they are often closed or normalized to be expressed in proportions adding up to 1, percentages adding to 100, or the like; but the scale-invariance property implies that the normalization constant used is actually irrelevant. That is, compositional methods are applicable whenever the researcher recognizes that the relevant information in the data is relative and, thus, there is an intrinsic interdependence between the parts that make up the composition. These particularities are not considered by ordinary statistical methods, which are generally designed for unconstrained real-valued data.
+In general, compositional data refers to multivariate, positive and scale-invariant data that convey relative information. Although not necessarily, they are often closed or normalized to be expressed in proportions adding up to 1, percentages adding to 100, or the like; but the scale-invariance property implies that the normalization constant used is actually irrelevant. That is, compositional methods are applicable whenever the researcher recognizes that the relevant information in the data is relative and, thus, there is an intrinsic interdependence between the parts that make up the composition. These particularities are not considered by ordinary statistical methods, which are generally designed for unconstrained real-valued data.
+
+Therefore, this task view provides a curated collection of R packages to 
+support compositional data analysis within the log-ratio coordinate framework. The main goal is serving as a guide to practitioners interested in applying such methods. The packages can be broadly categorized into the following topics, although many provide functionalities spanning multiple categories, as detailed below.
 
 **Table of Contents**
 
@@ -26,19 +29,8 @@ In general, compositional data refers to multivariate, positive and scale invari
 - [References](#references)
 
 
-### Background
-Awareness of the problems with compositional data dates back to the end of the 19th century, when the renowned statistician Karl Pearson recognized the problem of spurious correlations between variables scaled with respect to a common denominator. When closed to add up to constant value, compositional data formally represented on a simplex sample space, and this can be a convenient representation in a practical setting. The simplex is a constrained space with its own internal operations and geometry. However, any coherent approach to analyzing compositional data should not depend on the chosen representation, nor require any preliminary normalization. 
 
-The mainstream approach to compositional data analysis, as originally formulated by 
-[Aitchison (1982)](https://doi.org/10.1111/j.2517-6161.1982.tb01195.x), involves the use of log-ratio transformations (or log-ratio coordinates to use a more more modern terminology) which project the data into real space. Nowadays, the compositional literature offers a wide range of methods within this methodological framework, many of which are implemented in R packages.
 
-Compositional data are common in diverse scientific fields, including the chemical, biological, and environmental sciences; where they typically represent portions of a total sample weight or volume and are expressed in units such as percent, parts per million, mg/l, mmol/mol, or similar. Some examples include chemical compositions of soil, water, or air, 
-food compositions, behavioral or time-use profiles, and relative abundances of species. They are also common in socio-economical sciences; for example when dealing with market shares, investment portfolios, or household budgets.
-
-In recent years, the popularity of compositional methods has grown significantly. Simultaneously, new methodological challenges have arisen requiring novel ways to transfer and formulate compositional knowledge to meet the needs of different scientific fields.
-
-Therefore, this task view provides a curated collection of R packages that aim to 
-support compositional data analysis within the log-ratio coordinate framework. The main goal is serving as a guide to practitioners interested in applying such methods. The packages can be broadly categorized into the following topics, although in fact many provide functionalities spanning multiple categories, as detailed below.
 
 ### General purpose packages 
 
@@ -393,15 +385,15 @@ Alessandra: I agree with Javier's viewpoint, we should put a boundary to say who
 </span>
 -->
 
+### Background
+Awareness of the problems with compositional data dates back to the end of the 19th century, when the renowned statistician Karl Pearson recognized the problem of spurious correlations between variables scaled with respect to a common denominator. When closed to add up to constant value, compositional data formally represented on a simplex sample space, and this can be a convenient representation in a practical setting. The simplex is a constrained space with its own internal operations and geometry. However, any coherent approach to analyzing compositional data should not depend on the chosen representation, nor require any preliminary normalization. 
 
+The mainstream approach to compositional data analysis, as originally formulated by 
+[Aitchison (1982)](https://doi.org/10.1111/j.2517-6161.1982.tb01195.x), involves the use of log-ratio transformations (or log-ratio coordinates to use a more more modern terminology) which project the data into real space. Nowadays, the compositional literature offers a wide range of methods within this methodological framework, many of which are implemented in R packages.
 
-### Links
+Compositional data are common in diverse scientific fields, including the chemical, biological, and environmental sciences; where they typically represent portions of a total sample weight or volume and are expressed in units such as percent, parts per million, mg/l, mmol/mol, or similar. Some examples include chemical compositions of soil, water, or air, 
+food compositions, behavioral or time-use profiles, and relative abundances of species. They are also common in socio-economical sciences; for example when dealing with market shares, investment portfolios, or household budgets.
 
--   `r view("FunctionalData")` 
--   `r view("Bayesian")`
--   `r view("Cluster")`
--   `r view("MachineLearning")`
--   `r view("Robust")`
--   `r view("SpatioTemporal")`
+In recent years, the popularity of compositional methods has grown significantly. Simultaneously, new methodological challenges have arisen requiring novel ways to transfer and formulate compositional knowledge to meet the needs of different scientific fields.
 
 ### References
