@@ -171,8 +171,7 @@ Probability density functions are essentially scale invariant data objects, usua
 data and embedded in a Hilbert space, so-called a Bayes space (see [van den Boogaart, Egozcue and Pawlowsky-Glahn (2014)](https://doi.org/10.1111/anzs.12074) for details).
 
 The packages listed below implement methods for density data analysis from this perspective.
-Note that they differ from those included in the `r view("FunctionalData")` 
-in that a Bayes space is assumed as sample space for the density functions.
+Rather than methods listed in the `r view("FunctionalData")` task view, the packages listed here assume that the sample space for density functions is the Bayes space. 
 
 -   `r pkg("robCompositions", priority = "core")`: methods for
 representation of probability density functions using compositional smoothing splines, grounded on the theory of Bayes spaces.
@@ -284,7 +283,7 @@ in monogastric animals. Both methods for compositional and constrained data are 
 
 Compositional data analysis is an integral part of geostatistics and geochemistry, areas where the
 methodology found its first successful applications. Data sets here often represent proportions of elements,
-minerals, or isotopes, and are subject to spatial dependencies (see `r view("SpatioTemporal")`). In the case of compositional data, these
+minerals, or isotopes, and are subject to spatial dependencies (see `r view("SpatioTemporal")` for the task view on spatio-temporial methods and packages). In the case of compositional data, these
 applications require methods that
 respect their relative nature while taking into account spatial structures and relationships.
 
