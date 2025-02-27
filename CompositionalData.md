@@ -10,7 +10,7 @@ source: https://github.com/cran-task-views/CoDa/
 
 In general, compositional data refers to multivariate, positive and scale-invariant data that convey relative information. Although not necessarily, they are often closed or normalized to be expressed in proportions adding up to 1, percentages adding to 100, or the like; but the scale-invariance property implies that the normalization constant used is actually irrelevant. That is, compositional methods are applicable whenever the researcher recognizes that the relevant information in the data is relative and, thus, there is an intrinsic interdependence between the parts that make up the composition. These particularities are not considered by ordinary statistical methods, which are generally designed for unconstrained real-valued data.
 
-Therefore, this task view provides a curated collection of R packages to 
+This task view provides a curated collection of R packages to 
 support compositional data analysis within the log-ratio coordinate framework. The main goal is serving as a guide to practitioners interested in applying such methods. The packages can be broadly categorized into the following topics, although many provide functionalities spanning multiple categories, as detailed below.
 
 **Table of Contents**
