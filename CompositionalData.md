@@ -299,7 +299,7 @@ categorical data are supported using distances like Kolmogorov-Smirnov, Wasserst
 assessing hydraulic sorting effects are included. Additionally, a user-friendly interface is provided for R beginners.
 
 -   `r pkg("ArArRedux")`: data reduction and error propagation for 
-$Ar\(^\text{40}\)/Ar\(^\text{39}\)$ geochronology, processing isotopic compositions from noble 
+$Ar\^\text{40}\/Ar\^\text{39}\$ geochronology, processing isotopic compositions from noble 
 gas mass spectrometer data. Methods for regression, blank and decay corrections, 
 detector intercalibration, interference corrections, and age calculation. 
 Argon isotope ratios are treated as compositional data for accurate statistical handling.
