@@ -26,7 +26,6 @@ support compositional data analysis within the log-ratio coordinate framework. T
 - [Special applications in geostatistics and geochemistry](#special-applications-in-geostatistics-and-geochemistry)
 - [Other packages](#other-packages)
 - [Background](#background)
-- [References](#references)
 
 
 
