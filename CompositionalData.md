@@ -392,4 +392,4 @@ food compositions, behavioral or time-use profiles, and relative abundances of s
 
 In recent years, the popularity of compositional methods has grown significantly. Simultaneously, new methodological challenges have arisen requiring novel ways to transfer and formulate compositional knowledge to meet the needs of different scientific fields.
 
-### References
+
