@@ -38,17 +38,16 @@ This section refers to packages that provide a general platform for compositiona
 analysis in R, implementing functions to conduct basic operations and 
 calculations, log-ratio representations, 
 data visualization and some common statistical analyses. They, typically 
-accompanying a published monograph, provide an environment compatible with the basic 
-properties of compositional data to those approaching
-the methodology from diverse domains. 
+accompany a published monograph and provide an environment for analysis compatible with the basic 
+properties of compositional data for those approaching the methodology from diverse domains. 
 
 -   `r pkg("compositions", priority = "core")`: once a class for the 
-data is set, corresponding
+data is set, which corresponds
 to the assumed underlying geometry (either compositional, `acomp` class, or 
 multivariate positive data, `aplus` class), the package operates through functions for 
 their consistent analysis and modelling; including descriptive statistics, 
 visualization, statistical testing, and multivariate analysis (e.g. principal 
-component analysis, clustering, MANOVA and regression). Also implements some geostatistical tools such a variogram for compositions and compositional ordinary kriging.
+component analysis, clustering, MANOVA and regression). It also implements some geostatistical tools such a variogram for compositions and compositional ordinary kriging.
 This package is linked to the monograph 
 [van den Boogaart and Tolosana-Delgado (2013)](https://link.springer.com/book/10.1007/978-3-642-36809-7) 
 and supports the analyses and examples therein.
@@ -56,8 +55,8 @@ and supports the analyses and examples therein.
 -   `r pkg("robCompositions", priority = "core")`: with a main focus on robust 
 statistical methods (see `r view("Robust")` for an overview of other robust statistical methods available in R). The package includes a wide range of tools for the 
 manipulation and analysis of
-compositional data within the log-ratio framework. Thus, ordinary transformations, dealings 
-with irregular data, robust implementations of multivariate methods; such as 
+compositional data within the log-ratio framework. This includes ordinary transformations, dealings 
+with irregular data, and robust versions of methods such as 
 principal component analysis, factor analysis and discriminant analysis and regression with compositional 
 predictors. Additionally, it implements specialized methods for two-factorial compositions (a.k.a compositional tables) and 
 functional-compositional analysis of density data. 
@@ -72,17 +71,15 @@ correspondence analysis and redundance analysis.
 <!--
 -   `r pkg("Compositional")`: regression, classification, contour plots, hypothesis 
 testing and fitting of distributions for compositional data are some of the 
-functions included in this package. Further, some functions for percentages 
-(or proportions) are included. The package deals, however, with compositional 
-data mostly as with constrained data, thus avoiding the scale invariance 
+functions included in this package. Furthermore, some functions to deal with for percentages 
+(or proportions) are included. Distinctly, the package deals with compositional 
+data mostly as constrained data, thus ignoring the scale invariance 
 property and, more generally, the principles of compositional data analysis 
-characterizing the log-ratio approach 
-(despite referring to the classical reference 
-[Aitchison (1986)](https://doi.org/10.1002/bimj.4710300705)). This admits 
-direct incorporation of zero components for the analysis, but leads to some 
-conceptual inconsistencies with respect to the log-ratio approach. For these 
-reasons, analyses run using this package may be incoherent with those run with 
-the packages  `r pkg("compositions", priority = "core")` or  `r pkg("robCompositions", priority = "core")`.
+characterizing the log-ratio framework originally established in the classical reference 
+[Aitchison (1986)](https://doi.org/10.1002/bimj.4710300705)). Such approach allows for 
+zero components in the analysis, but leads to some 
+conceptual inconsistencies that the log-ratio approach on the other hand aims to avoid. Thus, analyses based on this package may be incoherent with those based on 
+`r pkg("compositions", priority = "core")`,  `r pkg("robCompositions", priority = "core")` and other packages below.
 -->
 
 ### Irregular data: zeros, censoring, missing and outliers
@@ -93,7 +90,7 @@ which may prevent from straightforward application of statistical methods in rea
 Of particular relevance for the log-ratio approach is the treatment zeros, which requires careful handling
 to not distorting basic properties of the data and preserve the consistency of subsequent analyses. Traditionally,
 three types of zeros have been distinguished: _rounded zeros_, _count zeros_ and
-_essential zeros_. Briefly, rounded zeros occur in continuous-valued compositions and are generally
+_essential zeros_. Briefly, rounded zeros occur in continuous-valued compositions, and are generally
 associated with small values that have been rounded or have fallen below the detection limit of
 the measuring device; count zeros refer to zeros that occur in discrete compositions derived from a
 counting processes, generally associated with limited sampling; and, finally, essential zeros
@@ -101,15 +98,15 @@ refer to truly zero values, i.e. parts of the composition that are genuinely abs
 Rounded zeros, which essentially correspond to a class of left-censored data, have received the most
 attention in the literature.
 
-Moreover, as with ordinary statistical methods, the presence of either missing values or outliers poses practical challenges.
+Moreover, analogously to ordinary statistical methods, the presence of either missing values or outliers poses practical challenges.
 Again, coherent handling is required for consistent data analysis within the compositional
 framework.
 
-This section refers to specialized packages focused on addressing these issues while respecting the compositional nature of the data.
+The following are specialized packages focused on addressing these issues while respecting the compositional nature of the data.
 
 -   `r pkg("zCompositions", priority = "core")`: a suite of data imputation methods applicable to zeros, nondetects, missing data, and combinations of them, following the
 principles of the log-ratio approach ([Palarea-Albaladejo and Martín-Fernández (2015)](https://doi.org/10.1016/j.chemolab.2015.02.019)). This includes a consistent treatment of closed and
-non-closed compositions, unique or varying detection limits, parametric and nonparametric imputation, single and multiple imputation, maximum likelihood and robust estimation, as well as some tools for the exploration of zero patterns and statistical testing of grouping structure.
+non-closed compositions, unique or varying detection limits, parametric and nonparametric imputation, single and multiple imputation, maximum likelihood and robust estimation, as well as some tools for the exploration of zero patterns and statistical testing of grouping structures.
 
 -   `r pkg("mvoutlier")`:	specific tools for visualizing and identifying multivariate outliers in compositional data.
 
@@ -134,10 +131,10 @@ graphical package `ggplot2`; supporting both standard and additional geometries 
 Shiny interface for interactive plotting.
 
 -   `r pkg("isopleuros")`: visualisation of data in ternary space, customising graphical elements, 
-and displaying statistical summaries. Includes specialised diagrams in archaeology, e.g. soil texture charts and ceramic phase diagrams.
+and displaying statistical summaries. Includes specialized diagrams in archaeology, e.g. soil texture charts and ceramic phase diagrams.
 
 -   `r pkg("provenance")`: representation of compositional and count data on ternary diagrams and point-counting data on radial plots. Allows to compute sample size required for specified levels of statistical precision,
-and to assess the effects of hydraulic sorting on detrital compositions. Intuitive query-based user interface for users who are not proficient in R.
+and to assess the effects of hydraulic sorting on detrital compositions. Provides an intuitive query-based user interface for users who are not proficient in R.
 
 <!--
 <span style="color: red;">
@@ -154,7 +151,7 @@ specialised in a particular topic and have some distinctive feature. Alessandra:
 
 Compositional tables (i.e., ordinary contingency tables in their discrete version) represent frequencies or proportions structured across multiple categories. The compositional nature of these tables, often constrained by row or column sums,
 requires specialized methods to analyze relationships, dependencies, and patterns while respecting their
-relative nature. This section refers to packages that implement specialized tools for their analysis,
+relative nature. This section refers to tools for their analysis,
 including log-ratio representation and selected multivariate methods.
 
 
@@ -171,7 +168,7 @@ Probability density functions are essentially scale invariant data objects, usua
 data and embedded in a Hilbert space, so-called a Bayes space (see [van den Boogaart, Egozcue and Pawlowsky-Glahn (2014)](https://doi.org/10.1111/anzs.12074) for details).
 
 The packages listed below implement methods for density data analysis from this perspective.
-Rather than methods listed in the `r view("FunctionalData")` task view, the packages listed here assume that the sample space for density functions is the Bayes space. 
+Unlike the methods in the `r view("FunctionalData")` task view, here it is assumed that the sample space for density functions is the Bayes space. 
 
 -   `r pkg("robCompositions", priority = "core")`: methods for
 representation of probability density functions using compositional smoothing splines, grounded on the theory of Bayes spaces.
@@ -193,7 +190,7 @@ Comment from KH: I removed the general section High dimensional data because the
 
 Regression modelling with compositional data allows researchers to explore associations between compositions
 and other variables, either as predictors/covariates or response; and also between compositions on both
-sides of the regression model. Packages specifically dedicated to compositional regression analysis are listed below. It should be noted that `r pkg("complmrob")` and `r pkg("robregcc")` do not offer anything essential beyond, for example, `r pkg("robCompositions")`.
+sides of the regression model. Packages specifically devoted to compositional regression analysis are listed below. It should be noted that `r pkg("complmrob")` and `r pkg("robregcc")` do not offer anything essential beyond, for example, `r pkg("robCompositions")`.
 <!--
 <span style="color: red;">
 Javier: I have removed the subsequent text as I found it too redundant and referring to general things not specific to regression
@@ -236,15 +233,15 @@ and confidence intervals for outcome changes based on reallocations of compositi
 -   `r pkg("multilevelcoda")`: Bayesian multilevel modelling with compositional data, both as predictors and outcomes, and _post hoc_ isotemporal substitution analysis.
 
 
-### High-dimensional compositional data with applications to omics data
+### High-dimensional compositional data with applications to the omics sciences
 
-In recent years, compositional data analysis is having a notable impact on the omics sciences and bioinformatics,
-where data types such as microbiome composition, gene expression, or metabolomic profiles have been
+In recent years, compositional data analysis has had a notable impact on the omics sciences and bioinformatics,
+where data types such as microbiome compositions, gene expression, or metabolomic profiles have been
 recognized as inherently compositional. Applications in this area require methods that address unique
-challenges such as high dimensionality, zero inflation, overdispersion, or the integration of phylogenetic
+challenges such as high dimensionality, zero inflation, overdispersion or the integration of phylogenetic
 information.
 
-This section highlights packages that provide tools specifically designed for omics data, but certainly most of
+This section highlights packages that provide compositional tools designed for omics data, but certainly most of
 them could also be considered for the statistical processing of high-dimensional compositional data in general.  
 
 -   `r pkg("FLORAL")`: log-ratio lasso regression for continuous, binary, and survival outcomes with compositional features as described in [Fei et al. (2023)](https://doi.org/10.1101/2023.05.02.538599).
@@ -266,12 +263,12 @@ details ... Not sure that this fits in.
 -   `r pkg("coda4microbiome")`: tools for microbiome data analysis while accounting for its compositional nature. Includes penalized regression methods for variable selection in cross-sectional 
 and longitudinal studies with binary or continuous outcomes.
 
--   `r pkg("codacore")`: identification of sparse log-ratios of a composition acting as predictor in regression problems. Scale-invariant log-ratios are derived optimized to account for
+-   `r pkg("codacore")`: identification of sparse log-ratios of a composition acting as predictor in regression problems. Scale invariant log-ratios are derived which are optimized to account for
 association with the response variable.
 
 -   `r pkg("lnmCluster")`: logistic normal-multinomial clustering for microbiome compositional data, including extensions for factor analysis, bi-clustering, and sparse covariance estimation.
 
--   `r pkg("MicrobiomeStat")`: robust methods for analysing microbiome compositional data, addressing zero-inflation, phylogenetic structure, and compositional effects. 
+-   `r pkg("MicrobiomeStat")`: robust methods for analysing microbiome compositional data, addressing zero inflation, phylogenetic structure, and compositional effects. 
 Applicable to other high-dimensional compositional data sets from sequencing experiments.
 
 -   `r pkg("QFASA")`: quantitative fatty acid signature analysis to estimate predator diets, leveraging fatty acid diversity, biosynthesis limitations, and digestion properties
@@ -283,11 +280,11 @@ in monogastric animals. Both methods for compositional and constrained data are 
 
 Compositional data analysis is an integral part of geostatistics and geochemistry, areas where the
 methodology found its first successful applications. Data sets here often represent proportions of elements,
-minerals, or isotopes, and are subject to spatial dependencies (see `r view("SpatioTemporal")` for the task view on spatio-temporial methods and packages). In the case of compositional data, these
+minerals, or isotopes, and are subject to spatial dependencies (see `r view("SpatioTemporal")` for a task view focused on spatiotemporal methods). In the case of compositional data, these
 applications require methods that
-respect their relative nature while taking into account spatial structures and relationships.
+respect their relative nature while taking into account any spatial structures and relationships.
 
-This section refers to packages implementing methods for geostatistical modelling,
+Thus, this section refers to packages for geostatistical modelling,
 spatial interpolation, variogram analysis, and compositional kriging; as well as techniques for analyzing spatial
 geochemical compositions. Note that some methods would be equally applicable to any data set with analogous
 structures in any other application area.
@@ -318,7 +315,7 @@ Javier: I have commented this when describing the compositions package above.
 ### Other packages
 
 This collection is meant to include other useful small packages, typically having a fairly specific purpose.
-The condition for inclusion is that the scale invariance property of compositional data is, at least partially, respected.
+In accordance with the log-ratio framework considered here, the condition for inclusion is that the scale invariance property of compositional data is, at least partially, respected.
 
 <!--
 Packages contained in this section are either of specific purpose or do not necessarily account 
@@ -327,8 +324,11 @@ Still methods contained in these packages can be useful in concrete applications
 also for comparison to methods based on the log-ratio methodology.
 -->
 
+-   `r pkg("coda.base")`: provides optimized and user-friendly implementations of functions to compute log-ratio coordinate representations of various types,
+including principal component and principal balance coordinates, as well as log-ratio coordinates from tailored orthonormal basis. It also allows to compute some basic compositional statistics.
+
 -   `r pkg("aIc")`: statistical tests to identify compositional _pathologies_ in data. Namely, coherence of
-correlations, dominance of distance, perturbation invariance, and singularity of the covariation matrix. Supports
+correlations, dominance of distances, perturbation invariance, and singularity of the covariation matrix. Supports
 multiple data transformations such as proportional, centred log-ratio (clr), and others from common R packages.
 
 <!--
@@ -336,9 +336,6 @@ multiple data transformations such as proportional, centred log-ratio (clr), and
 
 -   `r pkg("ccmm")`: compositional mediation models to estimate direct and indirect effects of a treatment on an outcome, designed for the case in which mediators are high-dimensional microbiome data.
 -->
-
--   `r pkg("coda.base")`: optimal implementation of friendly functions to compute log-ratio coordinate representations of various types,
-including principal component and principal balance coordinates and coordinates from tailored orthonormal basis; as well as some basic compositional statistics.
 
 <!--
 -   `r pkg("countprop")`: model-based metrics of proportionality using the logit-normal multinomial model. It can also provide empirical and plugin estimates of these metrics. 
@@ -385,7 +382,7 @@ Alessandra: I agree with Javier's viewpoint, we should put a boundary to say who
 -->
 
 ### Background
-Awareness of the problems with compositional data dates back to the end of the 19th century, when the renowned statistician Karl Pearson recognized the problem of spurious correlations between variables scaled with respect to a common denominator. When closed to add up to constant value, compositional data formally represented on a simplex sample space, and this can be a convenient representation in a practical setting. The simplex is a constrained space with its own internal operations and geometry. However, any coherent approach to analyzing compositional data should not depend on the chosen representation, nor require any preliminary normalization. 
+Awareness of the problems with compositional data dates back to the end of the 19th century, when the renowned statistician Karl Pearson recognized the problem of spurious correlations between variables scaled with respect to a common denominator. When closed to add up to constant value, compositional data are formally projected on a simplex sample space, and this is often a convenient representation in a practical setting. The simplex is a constrained space with its own internal operations and geometry. However, any coherent approach to analyzing compositional data should not depend on the chosen representation, nor require any preliminary normalization. 
 
 The mainstream approach to compositional data analysis, as originally formulated by 
 [Aitchison (1982)](https://doi.org/10.1111/j.2517-6161.1982.tb01195.x), involves the use of log-ratio transformations (or log-ratio coordinates to use a more more modern terminology) which project the data into real space. Nowadays, the compositional literature offers a wide range of methods within this methodological framework, many of which are implemented in R packages.
