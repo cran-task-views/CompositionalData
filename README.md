@@ -12,12 +12,12 @@ Go to the directory where the file `CoDa.md` is located and run:
 ```{r}
 install.packages("ctv")
 library("ctv")
-ctv2html("CoDa.md", cran = TRUE)
-browseURL("CoDa.html")
+ctv2html("CompositionalData.md", cran = TRUE)
+browseURL("CompositionalData.html")
 ```
 
 Check for errors:
 
 ```{r}
-check_ctv_packages("CoDa.md")
+check_ctv_packages("CompositionalData.md")
 ```
