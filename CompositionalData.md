@@ -3,7 +3,7 @@ name: CompositionalData
 topic: Compositional Data Analysis
 maintainer: Karel Hron, Javier Palarea-Albaladejo, Matthias Templ, Alessandra Menafoglio
 email: karel.hron@upol.cz
-version: 2025-02-28
+version: 2025-03-14
 source: https://github.com/cran-task-views/CompositionalData/
 ---
 
