@@ -223,6 +223,8 @@ statistical testing between conditions, and network representation of results.
 
 ### Background
 
+The following should explain which direction in compositional data analysis this task view follows. 
+
 Awareness of the problems with compositional data dates back to the end of the 19th century, when the renowned statistician Karl Pearson 
 recognized the problem of spurious correlations between variables scaled with respect to a common denominator. 
 When closed to add up to constant value, compositional data are formally projected on a simplex sample space, and this is often a convenient representation in a practical setting. 
