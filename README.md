@@ -1,23 +1,12 @@
-# coda-ctv-draft
+## CRAN Task View: Compositional Data Analysis
 
-This is an intitial github repo for the CRAN Task View (CTV) on Compositional Data Analysis. 
+**URL:** <https://CRAN.R-project.org/view=CompositionalData>
 
-Afterwards we put this CTV as an issue (assigned to Achim Zeileis) to the CRAN Task View 
-GitHub repository.
+**Source file:** [CompositionalData.md](CompositionalData.md)
 
-To compile the Markdown file:
-
-Go to the directory where the file `CoDa.md` is located and run:
-
-```{r}
-install.packages("ctv")
-library("ctv")
-ctv2html("CompositionalData.md", cran = TRUE)
-browseURL("CompositionalData.html")
-```
-
-Check for errors:
-
-```{r}
-check_ctv_packages("CompositionalData.md")
-```
+**Contributions:** Suggestions and improvements for this task view are very
+welcome and can be made through issues or pull requests here on GitHub or
+via e-mail to the maintainer address. For further details see the
+[Contributing](https://github.com/cran-task-views/ctv/blob/main/Contributing.md)
+guide. All contributions must adhere to the
+[code of conduct](https://github.com/cran-task-views/ctv/blob/main/CodeOfConduct.md).
